@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  background-color: #B1D7B4;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.add {
+  width: 600px;
+  margin: auto;
+  padding: 20px 0px;
+  border-radius: 10px;
+  background-color: #7FB77E;
+}
+
+.main > .add > h3 {
+  width: 10vw;
+  margin: auto;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.add-note {
+  width: 30vw;
+  margin: auto;
+}
+
+.add-note.edit {
+  width: 80%;
+}
+
+.btn-container {
+  margin: auto;
+  width: 40%;
+}
+
+.btn.btn-primary.save {
+  margin: auto;
+  width: -webkit-fill-available;
+}
+
+.btn-container .btn-danger {
+  float: right;
+}
+
+.notes {
+  margin: auto;
+  width: 82vw;
+  word-wrap: initial;
+}
+
+.note {
+  background-color: white;
+  width: 25vw;
+  height: 15vh;
+  display: inline-block;
+  margin: 50px 20px;
+  padding: 25px;
+  border-radius: 5px;
+  overflow-wrap: anywhere;
+  vertical-align: top;
+  overflow: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.note > p {
+  margin-top: 15px;
+}
+
+.pin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.delete {
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  color: red;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: rgb(127, 140, 153);
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #000;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: inherit;
+}
+
+.footer a span#c {
+  color: rgb(115, 124, 133);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer a:hover span#c {
+  color: rgb(155, 2, 2);
+}
+
+@media screen and (max-width: 680px) {
+  .add {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+
+  .main > .add > h3 {
+    width: 35vw;
+  }
+
+  .add-note {
+    width: 90%;
+  }
+
+  .add-note.edit {
+    margin-top: 80px;
+    width: 90%;
+  }
+
+  .btn-container {
+    margin: auto;
+    width: 50%;
+  }
+
+  .notes {
+    width: 100vw;
+  }
+
+  .notes h6 {
+    margin: 50px 20px;
+  }
+
+  .note {
+    width: 90vw;
+    margin: 10px auto;
+    display: block;
+    overflow: hidden;
+  }
+}
