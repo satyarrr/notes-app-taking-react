@@ -51,7 +51,7 @@ const AddNote = ({ notes, setNotes, showNoteId, close, edit, del }) => {
       setTag(note.tag);
       setBody(note.body);
     }
-  }, [showNoteId]);
+  }, [ notes, showNoteId ]);
 
   return (
     <section className={`${edit ? "add-note edit" : "add-note"}`}>

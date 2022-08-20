@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Pagination from "./components/Pagination";
+import Pagination from "./Pagination";
 import AddNote from "./components/AddNote";
 import Note from "./components/Note";
 import Modal from "react-bootstrap/Modal";

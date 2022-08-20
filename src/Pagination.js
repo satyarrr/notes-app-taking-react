@@ -15,19 +15,19 @@ const Pagination = ({ nPages, page, setPage }) => {
     <nav>
       <ul className="pagination justify-content-center">
         <li className="page-item">
-          <a className="page-link" onClick={prevPage} href="#">
+          <a className="page-link" onClick={prevPage} href="/">
             Previous
           </a>
         </li>
         {pageNumbers.map((x) => (
           <li key={x} className={`page-item ${page === x ? "active" : ""}`}>
-            <a href="#" onClick={() => setPage(x)} className="page-link">
+            <a href="/" onClick={() => setPage(x)} className="page-link">
               {x}
             </a>
           </li>
         ))}
         <li className="page-item">
-          <a href="#" onClick={nextPage} className="page-link">
+          <a href="/" onClick={nextPage} className="page-link">
             Next
           </a>
         </li>
