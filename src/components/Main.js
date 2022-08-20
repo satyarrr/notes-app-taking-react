@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Pagination from "./Pagination";
-import AddNote from "./components/AddNote";
-import Note from "./components/Note";
+import AddNote from "./AddNote";
+import Note from "./Note";
 import Modal from "react-bootstrap/Modal";
 import {
   collection,
@@ -10,7 +10,7 @@ import {
   updateDoc,
   deleteDoc,
 } from "firebase/firestore";
-import { db } from "./components/firebase";
+import { db } from "./firebase";
 
 const Main = () => {
   const [notes, setNotes] = useState([]);
