@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Pagination from "./Pagination";
-import AddNote from "./AddNote";
-import Note from "./Note";
+import Pagination from "./components/Pagination";
+import AddNote from "./components/AddNote";
+import Note from "./components/Note";
 import Modal from "react-bootstrap/Modal";
 import {
   collection,
@@ -10,14 +10,14 @@ import {
   updateDoc,
   deleteDoc,
 } from "firebase/firestore";
-import { db } from "./firebase";
+import { db } from "./components/firebase";
 
 const Main = () => {
   const [notes, setNotes] = useState([]);
   const notesRef = collection(db, "notes");
 
   const [page, setPage] = useState(1);
-  const [notesPerPage, setNotesPerPage] = useState(6);
+  const [notesPerPage] = useState(6);
   const [show, setShow] = useState(false);
   const [showNoteId, setShowNoteId] = useState(null);
 
@@ -37,7 +37,7 @@ const Main = () => {
       setNotes(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getNotes();
-  }, []);
+  },);
 
   const handleShow = (id) => {
     setShowNoteId(id);
