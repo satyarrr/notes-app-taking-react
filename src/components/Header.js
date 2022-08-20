@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">Notes App</Navbar.Brand>
+        <Navbar.Brand href="/">Notes Taking App</Navbar.Brand>
           {/* <Search handleSearchNote={setSearchText} />
           <Note
 					notes={Note.filter((note) =>
